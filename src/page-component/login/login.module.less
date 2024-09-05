@@ -1,0 +1,55 @@
+@import '../../styles/appvar.less';
+
+.loginContainer {
+    display: 'flex';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../../public/login-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px; 
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: box-shadow 0.3s ease;
+    min-width: 420px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); 
+}
+
+.input {
+    height: 40px;
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+    color: @primary-color;
+    border-radius: 10px;
+}
+
+.input::placeholder{
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title h1{
+    color: #B9A473;
+    font-weight: bold;
+    font-family: georgia;
+    text-align: center;
+}
+
+.title {
+    padding: 10px;
+    padding-top: 0px;
+}

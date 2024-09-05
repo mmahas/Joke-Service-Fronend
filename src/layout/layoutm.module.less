@@ -1,0 +1,114 @@
+@import '../styles/appvar.less';
+
+.slider {
+    :global {
+        .ant-layout-sider-children {
+            background: linear-gradient(20deg, #8A4AF2, @primary-color 30%);
+        }
+
+        .ant-menu.ant-menu-dark {
+            background: linear-gradient(40deg, @primary-color 30%, #5f43b2);
+            height: 60vh;
+        }
+
+        .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+            background: @button-color;
+        }
+    }
+}
+
+.header {
+    :global {
+        .ant-layout-header {
+            background: @nav-color;
+            height: 8vh;
+        }
+    }
+}
+
+.header Header {
+    padding: 0;
+}
+
+.content {
+    height: 92vh;
+    padding: 24px;
+    padding-top: 12px;
+    background: @nav-color;
+    overflow-y: scroll;
+}
+
+.sliderButton {
+    font-size: 16px;
+    width: 64px;
+    height: 64px;
+    color: @primary-color;
+    padding-top: 5px;
+
+    @media(max-width: 550px) {
+        display: none;
+    }
+}
+
+.sliderTitle h3 {
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+    color: #D7C696;
+    text-align: center;
+}
+
+.sliderTitle h2 {
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+    color: #D7C696;
+    text-align: center;
+}
+
+.logoutButton {
+    font-family: sans-serif;
+}
+
+.logoutButton:hover {
+    border-color: @primary-color;
+    color: @primary-color;
+}
+
+.navButtons {
+    width: 97%;
+}
+
+.profileAlignment {
+    margin-top: -0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.profileDetails {
+    margin-left: 10px;
+}
+
+.profileDescription {
+    margin-top: -2.5rem;
+    align-items: center;
+}
+
+.productAlignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #6045B9;
+}
+
+.bottomStyle {
+    margin-top: auto;
+    text-align: center;
+    padding: 25px;
+    color: @button-color;
+    font-size: 16px;
+    font-family: serif;
+}
+
+.bottomStyleImage {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,104 @@
+@import './../../styles/appvar.less';
+
+.filterButton {
+    color: @primary-color;
+}
+
+.filterButton:hover {
+    border-color: @primary-color;
+    color: @primary-color;
+}
+
+.filterButtonNonMember {
+    color: #6c653a;
+}
+
+.editButton {
+    color: #1890ff;
+}
+
+.closeButton {
+    color: @primary-color;
+}
+
+.closeButton:hover {
+    color: @button-color;
+}
+
+.title {
+    font-size: 32px;
+    font-family: system-ui;
+    font-weight: 700;
+    color: @primary-color;
+    padding-left: 4%;
+
+    @media(max-width: 575px) {
+        font-size: 22px;
+        padding-left: 0%;
+    }
+}
+
+.input {
+    height: 36px;
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.input::placeholder {
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.closePageButton {
+    margin-right: 2.5%;
+    margin-top: 8px;
+    font-size: 22px;
+    color: gray;
+
+    @media(max-width: 575px) {
+        margin-right: 0%;
+        margin-top: 0px;
+    }
+}
+
+.spinnerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+.formContainer {
+    :global {
+        .ant-form-item-label>label {
+            color: gray;
+        }
+    }
+}
+
+.listCard {
+    background-color: rgb(249, 249, 249);
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(198, 198, 198);
+}
+
+.tag {
+    display: block;
+    width: 185px;
+    margin-top: 10px;
+}

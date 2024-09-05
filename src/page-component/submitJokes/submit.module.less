@@ -1,0 +1,275 @@
+@import './../../styles/appvar.less';
+
+.tableStyle{
+    // overflow-x: auto;
+    :global{
+        .ant-table-tbody > tr.ant-table-row:hover > td, .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+            background-color: @button-color;
+            color: white;
+        }
+    }
+}
+
+.filterButton {
+    // border-color: @primary-color;
+    color: @primary-color;
+}
+
+.filterButton:hover {
+    border-color: @primary-color;
+    color: @primary-color;
+    // background-color: @primary-color;
+}
+
+.filterButtonLeft {
+    // margin-bottom: 16px;
+    color: #5c9fe7;
+    // border-color: #5c9fe7;
+}
+
+.filterButtonLeft:hover {
+    border-color: #5c9fe7;
+    color: white;
+    background-color: #5c9fe7;
+}
+
+.activeButtonLeft {
+    border-color: #5c9fe7 !important;
+    color: white !important;
+    background-color: #5c9fe7 !important;
+}
+
+.activeButtonNonMember {
+    border-color: #6c653a !important;
+    color: white !important;
+    background-color: #6c653a !important;
+}
+
+.filterButtonNonMember {
+    color: #6c653a;
+}
+
+.filterButtonNonMember:hover {
+    border-color: #6c653a;
+    color: white;
+    background-color: #6c653a;
+}
+
+.filterButtonPast {
+    // border-color: #505050;
+    color: #505050;
+}
+
+.filterButtonPast:hover {
+    border-color: #505050;
+    color: white;
+    background-color: #505050;
+}
+
+.inActiveButton {
+    border-color: #505050 !important;
+    color: white !important;
+    background-color: #505050 !important;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.deleteButton:hover {
+    color: red;
+}
+
+.editButton {
+    color: #1890ff;
+}
+
+.editButton:hover {
+    color: #1890ff;
+}
+
+.searchButton {
+    background-color: @primary-color;
+    border-color: @primary-color;
+}
+
+.searchInput {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.searchButton:hover {
+    background-color: @primary-color;
+    border-color: @primary-color;
+}
+
+.closeButton {
+    color: @primary-color;
+}
+
+.closeButton:hover {
+    color: @button-color;
+}
+
+.title {
+    font-size: 32px;
+    font-family: system-ui;
+    font-weight: 700;
+    color: @primary-color;
+    padding-left: 4%;
+    @media(max-width: 575px){
+        font-size: 22px;
+        padding-left: 0%;
+    }
+}
+
+.input {
+    height: 36px;
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+    // color: @primary-color;
+    width: 100%;
+}
+
+.input::placeholder{
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filterInput {
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+    color: @primary-color;
+    border-color: @primary-color !important;
+    width: 160px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.filterInputConvert {
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight: 500;
+    color: @primary-color;
+    width: 105px;
+    height: 30px;
+    @media(min-width: 797px){
+        margin-bottom: 10px;
+    }
+    @media(max-width: 797px){
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+.filterBySearch {
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(41, 39, 39);
+    width: 220px;
+    height: 35px;
+
+    @media(max-width: 607px){
+        margin-bottom: 10px;
+    }
+
+    @media(max-width: 507px){
+        margin-bottom: 10px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.closePageButton {
+    margin-right: 2.5%;
+    margin-top: 8px;
+    font-size: 22px;
+    color: gray;
+    @media(max-width: 575px){
+        margin-right: 0%;
+        margin-top: 0px;
+    }
+}
+
+.memberButtonSM {
+    display: grid;
+    margin-bottom: 10px;
+    @media(min-width: 646px){
+        display: none;
+    }
+}
+
+.memberButtonLG {
+    margin-bottom: 16px;
+    @media(max-width: 645px){
+        display: none;
+    }
+}
+
+.tableSM {
+    @media( min-width: 600px){
+        display: none;
+    }
+    padding-top: 10px;
+}
+
+.tableLG {
+    @media( max-width: 601px){
+        display: none;
+    }
+}
+
+.summaryButton{
+    color: purple;
+}
+
+.updateMember {
+    @media( max-width: 575px){
+        margin-top: 30px;
+    }
+}
+
+.buttonGroupDL {
+    display: flex;
+    gap: 10px;
+    @media( max-width: 435px){
+        display: grid;
+        width: 100px;
+    }
+}
+
+.spinnerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+.formContainer {
+    :global{
+        .ant-form-item-label > label{
+            color: gray;
+        }
+    }
+}
+
+.listCard {
+    background-color: rgb(249, 249, 249);
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(198, 198, 198);
+}
