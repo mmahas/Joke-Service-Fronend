@@ -141,7 +141,7 @@ export const LayoutM = (props: any) => {
         {!collapsed &&
           <div className={styles.bottomStyle}>
             <Image src={Joker} alt='joker' width={70} className={styles.bottomStyleImage} />
-            <p>Mahas Milhar (Code94 Assignment)</p>
+            <p>Mahas Milhar</p>
           </div>}
       </Sider>
       <Layout className={styles.header}>
